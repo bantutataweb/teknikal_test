@@ -9,7 +9,7 @@ http://localhost:3888/api_product
 **Api Kategori**
 http://localhost:3888/api_kategori
 
-## Endpoints
+## Endpoints Product
 
 ### 1. Menambahkan Produk Baru
 

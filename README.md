@@ -15,7 +15,7 @@ http://localhost:3888/api_kategori
 
 **Endpoint**: `/create`  
 **Metode**: `POST`  
-**Deskripsi**: Endpoint ini memungkinkan pembuatan produk baru.
+**Deskripsi**: Endpoint ini pembuatan produk baru.
 
 #### Parameter Permintaan:
 - **name**: Nama produk (wajib).
@@ -136,3 +136,29 @@ http://localhost:3888/api_kategori
   "image": "http://example.com/produkA.jpg",
   "category_id": "1"
 }
+```
+
+### Mendapatkan Semua Produk (GET `/get`)
+
+```json
+{
+  "status": true,
+  "msg": "Berhasil tampilkan product",
+  "data": [
+    {
+      "id": 1,
+      "name": "Produk A",
+      "desc": "Ini adalah Produk A",
+      "image": "http://example.com/produkA.jpg",
+      "category_id": "1"
+    },
+    {
+      "id": 2,
+      "name": "Produk B",
+      "desc": "Ini adalah Produk B",
+      "image": "http://example.com/produkB.jpg",
+      "category_id": "2"
+    }
+  ]
+}
+```

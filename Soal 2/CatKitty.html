@@ -1,0 +1,52 @@
+<script>
+    //Lihat dibagian console
+    x = 46;
+    valueString = [];
+    for (let i = 1; i < x; i++) {
+        
+        if(i % 3 === 0 && i % 5 === 0){
+            valueString.push("catKitty")
+        }else if(i % 3 === 0){
+            valueString.push("cat")
+        }else if(i % 5 === 0){
+            valueString.push("kitty")
+        }else{
+            valueString.push(i)
+        }
+    }
+
+    //output
+    console.log(valueString.join(", "))
+
+// ======================================================//
+console.log("")
+// ======================================================//
+
+    //ini function addRule
+    function addRule(angka, output){
+        x = 16;
+        valueString = [];
+        for (let i = 1; i < x; i++) {
+            
+            if(i % 3 === 0 && i % 5 === 0){
+                valueString.push("catKitty")
+            }else if(i % 3 === 0){
+                valueString.push("cat")
+            }else if(i % 5 === 0){
+                valueString.push("kitty")
+            }else if(i === angka){
+                valueString.push(output)
+            }else{
+                valueString.push(i)
+            }
+        }
+
+        //output
+        console.log(valueString.join(", "))
+    }
+
+    //jalankan aplikasi dengan mengetik function addRule di console dan tambahkan nilai berapa yang mau diubah dan mau diubah apa
+    //contoh : 
+    addRule(13, "dog");
+    
+</script>

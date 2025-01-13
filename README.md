@@ -162,3 +162,35 @@ http://localhost:3888/api_kategori
   ]
 }
 ```
+
+### Mengubah Produk (PUT `/update/:id`)
+
+```json
+{
+  "name": "Produk A yang Diperbarui",
+  "desc": "Deskripsi diperbarui untuk Produk A",
+  "image": "http://example.com/produkA_updated.jpg",
+  "category_id": "1"
+}
+
+```
+
+### Menghapus Produk (DELETE `/delete/:id`)
+
+```json
+{
+  "status": true,
+  "msg": "Berhasil menghapus product"
+}
+```
+
+### Penanganan Error
+
+Jika terjadi error, API akan mengembalikan status kode yang sesuai (misalnya, 200 untuk kesalahan validasi, 500 untuk kesalahan server) dan pesan yang menjelaskan kesalahan tersebut.
+
+```json
+{
+  "status": false,
+  "msg": "Nama product sudah ada"
+}
+```
